@@ -2,7 +2,7 @@ import os
 from serpapi import GoogleSearch
 
 # Replace 'YOUR_SERPAPI_KEY' with your actual SerpAPI key
-API_KEY = 'f9738176e74c61141dd26b086be49cff54b46ff871c4ea7f680e891c5b2f3c25'  # Ensure this is the correct and valid API key
+API_KEY = ''  # Ensure this is the correct and valid API key
 
 def clean_price(price_str):
     # Remove common currency symbols and commas
