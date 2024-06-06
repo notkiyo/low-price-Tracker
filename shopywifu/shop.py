@@ -8,7 +8,7 @@ def clean_price(price_str):
     # Remove common currency symbols and commas
     price_str = price_str.replace(',', '').replace('₹', '').replace('$', '').replace('€', '').replace('£', '').strip()
     
-    # Attempt to convert the cleaned price to a float
+    # convert the cleaned price to a float
     try:
         return float(price_str)
     except ValueError:
@@ -20,7 +20,7 @@ def get_google_shopping_results(search_term):
         "q": search_term,
         "tbm": "shop",
         "gl": "in",  # Set to India
-        "hl": "en",  # Language set to English
+        "hl": "en",  # Lang  to English
         "api_key": API_KEY
     }
 
